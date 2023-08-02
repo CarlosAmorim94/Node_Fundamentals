@@ -11,4 +11,6 @@ export async function json(req, res) {
   } catch (error) {
     req.body = null;
   }
+
+  res.setHeader("Content-type", "application/json");
 }
